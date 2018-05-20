@@ -1,0 +1,661 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/QTQPHEstilo.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/miestilo.css">
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+</script>
+
+</head>
+
+<body>
+
+<div data-role="page" id="Principal" data-theme="d">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+      <h1 align="center">QTQPH</h1>
+      <h2 align="center">¿Qué tienes?¿Qué puedes hacer?</h2>
+ </div>
+
+  <div>
+      <div  class="presentacion01">
+          <div id="Entrar_button">
+          <a href="#Opciones">
+          <p>Ingresar</p>
+          </a>
+          </div>
+      </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="d">
+    <div class="row footer">
+      <div class="col span-1-of-2">
+          <nav>
+          
+        </nav>
+      </div>
+      <div class="col span-1-of-2">
+        <nav>
+          <div class="row" id="copyright">
+    <p>¡Contactanos!</p>
+    </div>
+        </nav>
+      </div>
+    </div>
+    
+   </div>
+</div>
+<!--Menu de Opciones-->
+    <div data-role="page" id="Opciones" data-add-back-btn="true" data-theme="d">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+      <h1>Elige</h1>
+    </div>
+    <!--Contenido-->
+    <div data-role="content" align="justify">
+    <div class="ContenidoG">
+        <div class="MenuG">
+        <a href="#RecetarioIngredientes">
+        	<img src="imagenes/Ingredientes.jpg"/>
+        	</a>
+        </div>
+        <div class="MenuG">
+        <a href="#RecetarioLista">
+        	<img src="imagenes/ListaRecetas.jpg"/>
+        	</a>
+        </div>
+    </div>
+    </div>
+    <!--/Contenido-->
+    <div data-role="footer" align="center" data-theme="d">
+        <div class="row footer">
+      <div class="col span-1-of-2">
+          <nav>
+          
+        </nav>
+      </div>
+      <div class="col span-1-of-2">
+        <nav>
+          <div class="row" id="copyright">
+    <p>¡Contactanos!</p>
+    </div>
+        </nav>
+      </div>
+    </div>
+   	</div>
+  </div>
+  
+  <!--Listado por ingredientes (Primero dificultad)-->
+  
+  <div data-role="page" id="RecetarioIngredientes" data-add-back-btn="true" data-theme="d">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+      <h1>Elige</h1>
+    </div>
+    <!--Contenido-->
+    <div data-role="content" align="justify">
+    <div class="ContenidoG">
+        <div class="MenuG">
+        <a href="#Huevos">
+        	
+        <img src="imagenes/HIng.jpg"/>
+        </a>
+        </div>
+        <div class="MenuG">
+        <a href="#Sopas">
+        	
+            <img src="imagenes/SIng.jpg"/>
+            </a>
+        </div>
+    </div>
+    </div>
+    <!--/Contenido-->
+    <div data-role="footer" align="center" data-theme="d">
+       <div class="row footer">
+      <div class="col span-1-of-2">
+          <nav>
+          
+        </nav>
+      </div>
+      <div class="col span-1-of-2">
+        <nav>
+          <div class="row" id="copyright">
+    <p>¡Contactanos!</p>
+    </div>
+        </nav>
+      </div>
+    </div>
+   	</div>
+  </div>
+  
+  <!--Listado de recetas-->
+  
+  <div data-role="page" id="RecetarioLista" data-add-back-btn="true" data-theme="d">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+      <h1>Elige</h1>
+    </div>
+    <!--Contenido-->
+    <div data-role="content" align="justify">
+    <div>
+    <!--Faciles-->
+    	<div class="ListadoDificultad">
+	<h2>Faciles</h2>
+        <div class="D_Opciones">
+        <a href="#HMexicana">
+        	
+        <img src="imagenes/HMexicana.png"/>
+        </a>
+        </div>
+        <div class="D_Opciones">
+        <a href="#SFideo">
+        	
+        <img src="imagenes/SFideo.jpg"/>
+        </a>
+        </div>
+        </div>
+        <!--Medias-->
+        <div class="ListadoDificultad">
+	<h2>Regulares</h2>
+        <div class="D_Opciones">
+        <a href="#HRancheros">
+        	
+            <img src="imagenes/HRancheros.jpg"/>
+            </a>
+        </div>
+        <div class="D_Opciones">
+        <a href="#SFria">
+        	
+        <img src="imagenes/SFria.jpg"/>
+        </a>
+        </div>
+        </div>
+        <!--Dificiles-->
+        <div class="ListadoDificultad">
+	<h2>Dificiles</h2>
+        <div class="D_Opciones">
+        <a href="#HPonchados">
+        	
+        <img src="imagenes/HPonchados.jpg"/>
+        </a>
+        </div class="ListadoDificultad">
+        <div class="D_Opciones">
+        <a href="#SGratinada">
+        	
+            <img src="imagenes/SGratinada.jpg"/>
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!--/Contenido-->
+    <div data-role="footer" align="center" data-theme="d">
+        <div class="row footer">
+      <div class="col span-1-of-2">
+          <nav>
+          
+        </nav>
+      </div>
+      <div class="col span-1-of-2">
+        <nav>
+          <div class="row" id="copyright">
+    <p>¡Contactanos!</p>
+    </div>
+        </nav>
+      </div>
+    </div>
+   	</div>
+  </div>
+  <!--Separacion por dificultad-->
+  
+  <!--Despues de Listado por ingredientes-->
+  <!--Huevos-->
+  
+  <div data-role="page" id="Huevos" data-add-back-btn="true" data-theme="d">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+      <h1>Elige</h1>
+    </div>
+    <!--Contenido-->
+    <div data-role="content" align="justify">
+    <div class="ContenidoG">
+    	<div class="ListadoDificultad">
+	<h2>Faciles</h2>
+        <div class="D_Opciones">
+        <a href="#HMexicana">
+        	
+        <img src="imagenes/HMexicana.png"/>
+        </a>
+        </div>
+        </div>
+        <div class="ListadoDificultad">
+	<h2>Medias</h2>
+        <div class="D_Opciones">
+        <a href="#HRancheros">
+        	
+            <img src="imagenes/HRancheros.jpg">
+            </a>
+        </div>
+        </div>
+        <div class="ListadoDificultad">
+	<h2>Dificles</h2>
+        <div class="D_Opciones">
+        <a href="#HPonchados">
+        	
+            <img src="imagenes/HPonchados.jpg"/>
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!--/Contenido-->
+    <div data-role="footer" align="center" data-theme="d">
+        <div class="row footer">
+      <div class="col span-1-of-2">
+          <nav>
+          
+        </nav>
+      </div>
+      <div class="col span-1-of-2">
+        <nav>
+          <div class="row" id="copyright">
+    <p>¡Contactanos!</p>
+    </div>
+        </nav>
+      </div>
+    </div>
+   	</div>
+  </div>
+   
+   
+   <!--Sopas-->
+  
+  <div data-role="page" id="Sopas" data-add-back-btn="true" data-theme="d">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+      <h1>Elige</h1>
+    </div>
+    <!--Contenido-->
+    <div data-role="content" align="justify">
+    <div class="ContenidoG">
+    	<div class="ListadoDificultad">
+	<h2>Faciles</h2>
+        <div class="D_Opciones">
+        <a href="#SFideo">
+        	
+        <img src="imagenes/Sfideo.jpg"/>
+        </a>
+        </div>
+        </div>
+        <div class="ListadoDificultad">
+	<h2>Medias</h2>
+        <div class="D_Opciones">
+        <a href="#SFria">
+        	
+            <img src="imagenes/SFria.jpg"/>
+            </a>
+        </div>
+        </div>
+        <div class="ListadoDificultad">
+	<h2>Dificiles</h2>
+        <div class="D_Opciones">
+        <a href="#SGratinada">
+        	
+            <img src="imagenes/SGratinada.jpg"/>
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!--/Contenido-->
+    <div data-role="footer" align="center" data-theme="d">
+        <div class="row footer">
+      <div class="col span-1-of-2">
+          <nav>
+          
+        </nav>
+      </div>
+      <div class="col span-1-of-2">
+        <nav>
+          <div class="row" id="copyright">
+    <p>¡Contactanos!</p>
+    </div>
+        </nav>
+      </div>
+    </div>
+   	</div>
+  </div>
+  <!--Recetas-->
+  <!--Receta2-->
+    <div data-role="page" id="HPonchados" data-add-back-btn="true" data-theme="d">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+      <h1>Nombre de la receta</h1>
+    </div>
+    <!--Contenido-->
+    <div>
+    	<div class="IngredientesR">
+            <h2>Ingredientes</h2>
+            <br>
+            <img src="imagenes/SIng.jpg"/>
+        </div>
+        <div class="Preparacion">
+        	<h2>Preparación</h2>
+        	<div class="Pasos">
+            <ul>
+            <li>
+            </li>
+            </ul>
+            </div>
+            <br>
+            <img src="imagenes/HPonchados1.jpg"/>
+        </div>
+    </div>
+    <!--/Contenido-->
+    <div data-role="footer" align="center" data-theme="d">
+        <div class="row footer">
+      <div class="col span-1-of-2">
+          <nav>
+          
+        </nav>
+      </div>
+      <div class="col span-1-of-2">
+        <nav>
+          <div class="row" id="copyright">
+    <p>¡Contactanos!</p>
+    </div>
+        </nav>
+      </div>
+    </div>
+   	</div>
+  </div>
+  
+  <!--Receta5-->
+     <div data-role="page" id="HRancheros" data-add-back-btn="true" data-theme="d">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+      <h1>Huevos Rancheros</h1>
+    </div>
+    <!--Contenido-->
+    <div>
+    	<div class="IngredientesR">
+            <h2>Ingredientes</h2>
+            <br>
+            <img src="imagenes/HIng.jpg"/>
+        </div>
+        <div class="Preparacion">
+        	<h2>Preparación</h2>
+            <br>
+        	<div class="Pasos">
+            <ul>
+            <li><br></li><li>Poner en una olla agua y vaciar las sopas (que él agua tape las sopas)
+Hervir hasta que la sopa esté blandita, antes de apagar poner sal al gusto,
+			</li><li><br></li>
+            <li>Una vez ya blandita la sopa en un coladero vaciar la sopa y tirar el agua</li><li><br></li>
+            <li>
+Licuar el jitomate, cebolla y ajo con poca agua, colar en la cacerola con aceite, dejar hervir unos minutos, a fuego bajo.</li>
+            <li><br></li><li>
+Agregar un poco de crema, condimentar con sal, agregar la sopa ya escurrida.</li>
+            <li><br></li><li>
+Dejar enfriar y servir, espolvorear con un poco de queso.<li><br></li>
+			</li>
+            </ul>
+            </div>
+            <br>
+            <div class="imgF">
+            <img src="imagenes/HRancheros1.jpg"/>
+            </div>
+        </div>
+    </div>
+    <!--/Contenido-->
+    <div data-role="footer" align="center" data-theme="d">
+        <div class="row footer">
+      <div class="col span-1-of-2">
+          <nav>
+          
+        </nav>
+      </div>
+      <div class="col span-1-of-2">
+        <nav>
+          <div class="row" id="copyright">
+    <p>¡Contactanos!</p>
+    </div>
+        </nav>
+      </div>
+    </div>
+   	</div>
+  </div>
+  
+  <!--Receta4-->
+    <div data-role="page" id="HMexicana" data-add-back-btn="true" data-theme="d">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+      <h1>Huevos a la Mexicana</h1>
+    </div>
+    <!--Contenido-->
+    <div>
+    	<div class="IngredientesR">
+            <h2>Ingredientes</h2>
+            <br>
+            <img src="imagenes/HIng.jpg"/>
+        </div>
+        <div class="Preparacion">
+        	<h2>Preparación</h2>
+            <br>
+        	<div class="Pasos">
+            <ul>
+            <li><br></li><li>Poner en una olla agua y vaciar las sopas (que él agua tape las sopas)
+Hervir hasta que la sopa esté blandita, antes de apagar poner sal al gusto,
+			</li><li><br></li>
+            <li>Una vez ya blandita la sopa en un coladero vaciar la sopa y tirar el agua</li><li><br></li>
+            <li>
+Licuar el jitomate, cebolla y ajo con poca agua, colar en la cacerola con aceite, dejar hervir unos minutos, a fuego bajo.</li>
+            <li><br></li><li>
+Agregar un poco de crema, condimentar con sal, agregar la sopa ya escurrida.</li>
+            <li><br></li><li>
+Dejar enfriar y servir, espolvorear con un poco de queso.<li><br></li>
+			</li>
+            </ul>
+            </div>
+            <br>
+            <div class="imgF">
+            <img src="imagenes/HMexicana1.jpg"/>
+            </div>
+        </div>
+    </div>
+    <!--/Contenido-->
+    <div data-role="footer" align="center" data-theme="d">
+        <div class="row footer">
+      <div class="col span-1-of-2">
+          <nav>
+          
+        </nav>
+      </div>
+      <div class="col span-1-of-2">
+        <nav>
+          <div class="row" id="copyright">
+    <p>¡Contactanos!</p>
+    </div>
+        </nav>
+      </div>
+    </div>
+   	</div>
+  </div>
+  
+  
+  <!--Receta3-->
+    <div data-role="page" id="SGratinada" data-add-back-btn="true" data-theme="d">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+      <h1>Sopa Gratinada</h1>
+    </div>
+    <!--Contenido-->
+    <div>
+    	<div class="IngredientesR">
+            <h2>Ingredientes</h2>
+            <br>
+            <img src="imagenes/SIng.jpg"/>
+        </div>
+        <div class="Preparacion">
+        	<h2>Preparación</h2>
+            <br>
+        	<div class="Pasos">
+            <ul>
+            <li><br></li><li>Poner en una olla agua y vaciar las sopas (que él agua tape las sopas)
+Hervir hasta que la sopa esté blandita, antes de apagar poner sal al gusto,
+			</li><li><br></li>
+            <li>Una vez ya blandita la sopa en un coladero vaciar la sopa y tirar el agua</li><li><br></li>
+            <li>
+Licuar el jitomate, cebolla y ajo con poca agua, colar en la cacerola con aceite, dejar hervir unos minutos, a fuego bajo.</li>
+            <li><br></li><li>
+Agregar un poco de crema, condimentar con sal, agregar la sopa ya escurrida.</li>
+            <li><br></li><li>
+Dejar enfriar y servir, espolvorear con un poco de queso.<li><br></li>
+			</li>
+            </ul>
+            </div>
+            <br>
+            <div class="imgF">
+            <img src="imagenes/SGratinada1.jpg"/>
+            </div>
+        </div>
+    </div>
+    <!--/Contenido-->
+    <div data-role="footer" align="center" data-theme="d">
+        <div class="row footer">
+      <div class="col span-1-of-2">
+          <nav>
+          
+        </nav>
+      </div>
+      <div class="col span-1-of-2">
+        <nav>
+          <div class="row" id="copyright">
+    <p>¡Contactanos!</p>
+    </div>
+        </nav>
+      </div>
+    </div>
+   	</div>
+  </div>
+  
+  
+  <!--Receta1-->
+    <div data-role="page" id="SFideo" data-add-back-btn="true" data-theme="d">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+      <h1>Sopa Fideo</h1>
+    </div>
+    <!--Contenido-->
+    <div>
+    	<div class="IngredientesR">
+            <h2>Ingredientes</h2>
+            <br>
+            <img src="imagenes/SIng.jpg"/>
+        </div>
+        <div class="Preparacion">
+        	<h2>Preparación</h2>
+            <br>
+        	<div class="Pasos">
+            <ul>
+            <li><br></li><li>Poner en una olla agua y vaciar las sopas (que él agua tape las sopas)
+Hervir hasta que la sopa esté blandita, antes de apagar poner sal al gusto,
+			</li><li><br></li>
+            <li>Una vez ya blandita la sopa en un coladero vaciar la sopa y tirar el agua</li><li><br></li>
+            <li>
+Licuar el jitomate, cebolla y ajo con poca agua, colar en la cacerola con aceite, dejar hervir unos minutos, a fuego bajo.</li>
+            <li><br></li><li>
+Agregar un poco de crema, condimentar con sal, agregar la sopa ya escurrida.</li>
+            <li><br></li><li>
+Dejar enfriar y servir, espolvorear con un poco de queso.<li><br></li>
+			</li>
+            </ul>
+            </div>
+            <br>
+            <div class="imgF">
+            <img src="imagenes/SFideo1.jpg"/>
+            </div>
+        </div>
+    </div>
+    <!--/Contenido-->
+    <div data-role="footer" align="center" data-theme="d">
+        <div class="row footer">
+      <div class="col span-1-of-2">
+          <nav>
+          
+        </nav>
+      </div>
+      <div class="col span-1-of-2">
+        <nav>
+          <div class="row" id="copyright">
+    <p>¡Contactanos!</p>
+    </div>
+        </nav>
+      </div>
+    </div>
+   	</div>
+  </div>
+  
+  
+  <!--Receta1-->
+    <div data-role="page" id="SFria" data-add-back-btn="true" data-theme="d">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+      <h1>Sopa Fría</h1>
+    </div>
+    <!--Contenido-->
+    <div>
+    	<div class="IngredientesR">
+            <h2>Ingredientes</h2>
+            <br>
+            <img src="imagenes/SIng.jpg"/>
+        </div>
+        <div class="Preparacion">
+        	<h2>Preparación</h2>
+            <br>
+        	<div class="Pasos">
+            <ul>
+            <li><br></li><li>Poner en una olla agua y vaciar las sopas (que él agua tape las sopas)
+Hervir hasta que la sopa esté blandita, antes de apagar poner sal al gusto,
+			</li><li><br></li>
+            <li>Una vez ya blandita la sopa en un coladero vaciar la sopa y tirar el agua</li><li><br></li>
+            <li>
+Licuar el jitomate, cebolla y ajo con poca agua, colar en la cacerola con aceite, dejar hervir unos minutos, a fuego bajo.</li>
+            <li><br></li><li>
+Agregar un poco de crema, condimentar con sal, agregar la sopa ya escurrida.</li>
+            <li><br></li><li>
+Dejar enfriar y servir, espolvorear con un poco de queso.<li><br></li>
+			</li>
+            </ul>
+            </div>
+            <br>
+            <div class="imgF">
+            <img src="imagenes/SFria1.jpg"/>
+            </div>
+        </div>
+    </div>
+    <!--/Contenido-->
+    <div data-role="footer" align="center" data-theme="d">
+        <div class="row footer">
+      <div class="col span-1-of-2">
+          <nav>
+          
+        </nav>
+      </div>
+      <div class="col span-1-of-2">
+        <nav>
+          <div class="row" id="copyright">
+    <p>¡Contactanos!</p>
+    </div>
+        </nav>
+      </div>
+    </div>
+   	</div>
+  </div>
+  
+  <!--</div>-->
+  
+  
+</body>
+</html>

@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+.presentacion01{
+	
+/*display:none;
+	width:100%;*/
+	
+background-image:rgba(0,0,255,0.3),rgba(244,164,96,0.8)),url(../imagenes/FondoN.jpg);
+	
+padding:10%;
+	
+background-size:cover;
+
+}
+
+
+#Entrar_button{
+	
+	
+/*background-image:rgba(0,0,255,0.3),rgba(244,164,96,0.8)),url(../imagenes/FondoN.jpg);
+	
+alignment-adjust:central;*/
+	
+margin: 0;
+	
+width:100%;
+	
+border-radius: 10%;
+	
+border: solid black;
+	
+	
+text-decoration: none;
+	
+text-transform: uppercase; 
+/*Convierte a mayusculas*/
+	
+font-size: 400%;
+	
+transition: all 0.2s linear;
+	
+}
+
+
+#Entrar_button>a{
+	
+/*alignment-adjust:central;*/
+
+}
+
+
+.D_Opciones>a{
+	
+/*alignment-adjust:central;*/
+
+}
+
+
+.D_Opciones{
+	
+display: inline-block;
+	
+margin:0%;
+	
+padding:0 30%;
+	
+
+}
+
+
+img{
+	
+width:80%;
+	
+height:auto;
+	
+alignment-adjust:central;
+	
+margin:0 30%;
+	
+background-position:center;
+	
+border-radius: 20%;
+
+}
+
+.ListadoDificultad{
+	
+padding:0;
+	
+margin:0;
+	
+display:inline-block;
+	
+width:100%;
+	
+border: solid azure;
+	
+background-color: cadetblue;
+	
+
+}
+
+
+.ListadoDificultad>h2{
+	
+text-align: center;
+margin: 2% 55%;
+
+}
+
+.MenuG{
+	
+margin:0%;
+	
+padding:0 20%;
+	
+display:inline-block;
+
+}
+
+
+.MenuG>a>img{
+	
+width:50%;
+	
+height:auto;
+
+}
+
+
+/*Recetas*/
+
+ul{
+	
+margin:0;
+	
+padding:0;
+	
+list-style: none;
+
+}
+
+
+li{
+	
+margin:0;
+	
+padding:0;	
+	
+float: left;
+	
+width: 20%;
+
+}
+
+
+.meal-photo {
+	
+width: 100%;
+	
+margin: 0;
+	
+background-color: #000;
+	
+overflow: hidden;
+
+}
+
+
+.social-links{
+	
+font-size:xx-large;
+
+}
+
+
+.IngredientesR>img{
+	
+width:40%;
+	
+margin:0 30%;
+	
+
+}
+
+
+.imgF{
+	
+width:40%;
+	
+margin:0 30%;
+
+}
+
+.Preparacion{
+}
+.Pasos>ul{
+	
+list-style:lower-roman;
+	
+alignment-adjust:central;
+	
+margin:5% 20%;
+
+}
+
+.Pasos>li{
+	
+float:inherit;
+	
+display:block;
+
+}
